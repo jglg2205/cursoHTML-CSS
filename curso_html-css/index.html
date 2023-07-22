@@ -3,33 +3,50 @@
 <html lang="es">
 
   <head>
+    <title>Apps de Gatos</title>
+    <meta charset="UTF-8">
+    <!--Hoja de Estilo-->
+    <link href="style.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,700;1,300;1,700&family=Josefin+Sans:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,300;1,500&family=Rubik+Dirt&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
     <h1>Apps de Gatos</h1>
-
-    <main>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores expedita, assumenda pariatur unde praesentium. Sit quis iste accusamus ex voluptas odit neque alias, cumque recusandae quasi, quas molestiae sequi?</p>
-      <a href="https://www.freecodecamp.org/espanol/" target="_blank">Has click aqui para ver mas imagenes de gatos</a>
-      <!--INDICE DE ENLACES-->
-      <a href="#parrafo-1"><p>Parrafo 1</p></a>
-      <a href="#parrafo-2"><p>Parrafo 2</p></a>
-      <a href="#listas-gatos"><p>Listas de Gatos</p></a>
-      <img src="imagen/gato1.jpg" alt="imagen de un gato" width="250" height="250">
-    </main>
+    <div class="principal">
+      <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores expedita, assumenda pariatur unde praesentium. Sit quis iste accusamus ex voluptas odit neque alias, cumque recusandae quasi, quas molestiae sequi?</p>
+        
+        <!--INDICE DE ENLACES-->
+        <div class="menu">
+          <a href="https://www.freecodecamp.org/espanol/" target="_blank">Has click aqui para ver mas imagenes de gatos</a>
+          <a href="#parrafo-1"><p>Parrafo 1</p></a>
+          <a href="#parrafo-2"><p>Parrafo 2</p></a>
+          <a href="#listas-gatos"><p>Listas de Gatos</p></a>
+      </div>
+        <img src="imagen/gato1.jpg" alt="imagen de un gato" width="250" height="250">
+        
+        
+      </main>
+    </div>
+    
+    <hr>
     <!--INICIO DE LAS SECCIONES POR PARRAFO-->
-    <section>
+    <section class="seccion-clara">
       <h3 id="parrafo-1">Parrafo 1</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, itaque illum recusandae minima voluptas soluta maiores atque, tempore provident dolorem ipsa ullam obcaecati unde nemo fugiat iure id, cupiditate qui?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque, molestias dolore temporibus a alias, repellendus adipisci, ad fugiat porro aut nemo recusandae necessitatibus sit corrupti eum cupiditate corporis ea.</p>
     </section>
-    <section>
+    <section class="seccion-clara">
       <h3 id="parrafo-2">Parrafo 2</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis est cupiditate quibusdam veniam expedita. Cum nulla neque non accusamus expedita quod error voluptatum, quaerat fugiat optio consequatur. Est, facere deleniti?</p>
+      <hr>
     </section>
     <!--SECCION DE LAS LISTAS ORDENADAS-->
-    <section>
+    <section class="seccion-oscura">
       <h3 id="listas-gatos">Listas de Gatos</h3>
       <p>Cosas que aman:</p>
       <ul>
@@ -39,7 +56,7 @@
       </ul>
       <img src="imagen/lasaña.jpg" width="250" height="250">
     </section>
-    <section>
+    <section class="seccion-oscura">
       <p>Cosas que odian:</p>
       <ol>
         <li>El agua</li>
@@ -48,6 +65,29 @@
       </ol>
       <img src="imagen/agua.jpg" width="250" height="250">
     </section>
+    <hr>
+    <!--FORMULARIO-->
+    <form action="/registro">
+      <fieldset class="seccion-clara">
+        <legend class="leyenda">¿Donde prefiere estar tu gato?</legend>
+        <label for="inetrior"><input type="radio" id="interior" name="interior-exterior" value="interior" checked> Interior</label><br>
+      <label for="exterior"><input type="radio" id="exterior" name="interior-exterior" value="exterior"> Exterior</label><br>
+      </fieldset>
+      <fieldset class="seccion-clara">
+        <legend class="leyenda">¿Que tipo de personalidad tiene tu gato?</legend>
+        <label for="carinoso"><input type="checkbox" id="carinoso" name="personalidad" value="carinoso" checked> Cariñoso</label><br>
+        <label for="perezoso"><input type="checkbox" id="perezoso" name="personalidad" value="perezoso"> Perezoso</label><br>
+        <label for="energico"><input type="checkbox" id="energico" name="personalidad" value="energico"> Energico</label>
+      </fieldset>
+      <div class="formulario">
+        <input type="text" placeholder="URL de la imagen" required><br><br>
+      <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <footer>
+      <p><small>Sin derechos de autor - <a href="https://www.freecodecamp.org/espanol/">freecodecamp</a></small></p>
+    </footer>
 
   </body>
 

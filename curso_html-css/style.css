@@ -1,0 +1,66 @@
+
+body {
+    background-color: dimgray;
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+h3 {
+    color: brown;
+}
+
+.principal{
+    background-color: rgb(89, 147, 144);
+    padding: 5px;
+    color: aliceblue;
+}
+
+.seccion-clara{
+    background-color: rgb(89, 147, 144);
+    color:aliceblue;
+    font-family: 'josefin Sans', sans-serif;
+}
+.menu{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+a {
+    color: rgb(237, 130, 54);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.leyenda{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    border-width: 5px;
+    border-color: beige;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-right: 50%;
+    border-style: solid;
+}
+
+.seccion-oscura {
+    background-color: honeydew;
+}
+
+.formulario {
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
